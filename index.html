@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sritha Bhupatiraju</title>
+    <style>
+        body 
+        {
+            font-family: Arial;
+            background: #fc9fbf;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card 
+        
+        {
+            background: white;
+            border: 1px solid #ccc;
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .pic 
+        {
+            width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 20px;
+        border: 3px solid #fc9fbf;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .info 
+        {
+
+            background: #f0f0f0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .me
+        {
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .p
+        {
+            background: #fc9fbf;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .buttons 
+        {
+            margin: 20px 0;
+        }
+
+        .btn 
+        {
+            background: #ffffff;
+            color: #fc9fbf;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover 
+        {
+            background: #fdc1d6;
+        }
+
+        .extra 
+        {
+            display: none;
+            margin: 10px 0;
+            background: #fc9fbf;
+            padding: 15px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="portrait.jpeg" alt="Portrait Photo" class="pic">
+        
+        <h1>Sritha Bhupatiraju</h1>
+        
+        <div class="info">
+        <div class="me"><strong>Major:</strong> Computer Science</div>
+        <div class="me"><strong>Year:</strong> Junior   </div>
+            <div class="me"><strong>Hometown:</strong> San Jose, CA</div>
+        </div>
+
+        <div class="p">
+            <p>I am driven to apply my technical knowledge to closing educational gaps and empowering students of all backgrounds to reach their full potential.</p>
+        </div>
+
+        <div id = "hobbies" class="extra">
+            <h4> I Enjoy...</h4>
+            <p>
+                Reading <br>
+                Playing Volleyball <br>
+            Dancing <br>
+                Jewelry Making </p>
+        </div>
+
+        <div id = 'projects' class="extra">
+            <h4> My Past Projects...</h4>
+            <p> 
+                LLM-powered Question-Answering System <br>
+                Airline Management System <br>
+                WanderSync: Travel Management App <br>
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a href = "https://github.com/sritha8" target ="_blank" class = "btn"> GitHub </a>
+            <a href = "https://www.linkedin.com/in/sritha-bhupatiraju" target="_blank" class = "btn"> LinkedIn</a>
+            <a href = "https://goldenplatedesigns.square.site" target="_blank" class = "btn"> My Jewelry</a>
+
+            <button class="btn" onclick="showSection('hobbies')"> Hobbies</button>
+            <button class="btn" onclick="showSection('projects')"> Projects</button>
+        </div>
+
+
+    </div>
+    
+<script>
+    function showSection(sectionId) 
+    
+    {
+    var section = document.getElementById(sectionId);
+    if (section.style.display === 'block') 
+    {
+        section.style.display = 'none';
+    } 
+    else 
+    {
+        section.style.display = 'block';
+    }
+}
+</script>
+    
+</body>
+</html>
